@@ -1,0 +1,125 @@
+section.contact{
+    margin: 0 3rem ;
+}
+
+section.contact h1{
+    font-size: 2rem;
+    margin: .5rem 1rem;
+}
+section.contact h1 span{
+    font-size: 1.5rem;
+    color: var(--subtitle) ;
+    margin-right: 5px;
+}
+section.contact p{
+    margin: .5rem 1rem;
+    padding-bottom: 1rem
+}
+
+
+
+
+
+section.contact form{
+    color: var(--subtitle);
+    margin: .5rem 1rem;
+    width: 70%;
+    height: 15rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    border: solid 1px #346c6bb6;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #ade6e554;
+
+}
+section.contact form label{
+    letter-spacing: 1.5px;
+}
+
+section.contact form #email,
+section.contact form #Message{
+    all: unset;
+    background-color: var(--bgcolor);
+    padding: 7px;
+    border: solid 1px #107c7a25;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    width: 70% ;
+}
+section.contact form #Message{
+    padding-bottom: 5rem;
+}
+section.contact form #email:hover,
+section.contact form #Message:hover{
+    border: solid 1px #107c7b;
+    box-shadow: 1px 1px 10px rgba(18, 87, 78, 0.297);
+}
+section.contact form #email:focus,
+section.contact form #Message:focus{
+    border: solid 1px #107c7b;
+    box-shadow: 1px 1px 10px rgb(44, 212, 189);
+}
+
+section.contact form button{
+    color: #107c7b;
+    width: 5rem;
+    padding: .6rem;
+    border: solid 1px #107c7a25;
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+section.contact form button:hover{
+    border: solid 1px #107c7b;
+    font-size: 1.1rem;
+    opacity: 1;
+    
+}
+section.contact form button:focus{
+    opacity: 1;
+    border: solid 1px #107c7b;
+    box-shadow: 1px 1px 10px rgb(44, 212, 189);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:964px) {
+    section.contact{
+       display: block;
+       flex: none;
+    }
+    
+    section.contact form{
+        height: auto;
+    }
+    section.contact form div.flex{
+        flex-direction: column;
+    }
+    
+    section.contact form div.flex label{
+    margin-bottom: 1rem;    }
+    
+    section.contact form button{
+    width: 50%; 
+   margin:1rem;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+      justify-content: center;
+        margin-left: 5rem;
+    }
+    
+}
+@media (min-width:964px){
+    section.contact form button{ margin-left:2rem;}
+}

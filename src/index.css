@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+/* html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  */
+*{
+  margin: 0px;
+  padding: 0px;
+  color: var(--font);
+
+}
+
+:root{
+  --primary:#000;
+  --secondary:rgb(25, 25, 28); 
+--bgcolor: rgb(37, 37, 41);
+
+
+  --liner: rgb(44, 212, 189);
+  --title: rgb(244 244 254);
+  --subtitle: rgb(161 161 170);
+}
+
+.light{
+  --primary: #fff;
+  --secondary:#fff; 
+ --liner: #1e1e1e3b;
+ --font:#black;
+ --bgcolor: #fff;
+
+}
+.dark{
+  --primary:#000;
+  --secondary:rgb(25, 25, 28); 
+  --liner:#e6e6e62c;
+  --bgcolor: rgb(37, 37, 41);
+
+  --title: rgb(244 244 254);
+  --subtitle: rgb(161 161 170);
+}
+body{
+  background-color: var(--primary);
+ }
+
+.container{
+  border: 1px solid var(--liner);
+  /* margin: -32px; */
+  width: 90%;
+  margin-left: auto;
+margin-right: auto;
+background-color: var(--secondary );
+}
+.devider{
+  margin: 3rem 0 ;
+  border-bottom: 1px solid var(--liner);
+
+  width: calc(100%+ 1.7rem + 1.7rem);
+}  
+
+li{
+  list-style: none;
+  color: var(--subtitle);
+}
+a{
+  text-decoration: none;
+  color:initial;
+  transition: 1s;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+.border{
+border: 2px solid red;
+}
+button{
+  all: unset;
+  color: var(--title);
+}
+button:hover{
+  cursor: pointer;
+  
+}
+button:active{
+  scale: .9;
+}
+h1{
+  color: var(--title);
+}
+p{
+  color: var(--subtitle);
+}
+
+
+
+ 
+/* for Firefox */
+ html {scrollbar-color: var(--liner) var(--bgcolor);}
